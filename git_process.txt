@@ -42,3 +42,20 @@ git branch -M main
 git remote add origin _GIT_LINK_TO_PROJECT_HERE_
 
 git push -u origin main
+
+
+------------------------------
+Create a repository on GitHub
+Delete existing .git file on your local directory
+Go to local project directory and type git init
+git add .
+git commit -m"My First Commmit"
+Now check your branch name it will be master in your local project
+git remote add origin <remote repository URL past here from the github repository> then type git remote -v
+git push -f origin master
+Now check the github repository you will see two branch 1. main 2. master
+In your local repository create new branch and the branch name will be main
+git checkout main
+git merge master
+git pull origin main
+git push -f origin main
