@@ -4,3 +4,41 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin "https://github.com/anatmart/repo_name.git"
 git push -u origin main
+
+1- Either you forgot to include the .gitignore file.
+
+Here are all the steps required:
+
+Create an empty Git repository on remote,
+
+On local create the .gitignore file for your project. GitHub gives you a list of examples here
+
+Launch a terminal, and in your project do the following commands:
+
+git remote add origin YOUR/ORIGIN.git
+
+git add .
+
+git commit -m "initial commit or whatever message for first commit"
+
+git push -u origin master
+2- Or you are trying to create a new Github project.
+
+Github replaced master with main as the default branch name. To resolve the issue :
+
+On your local project:
+remove the .git folder if it exists
+recreate a clean repository by launching the following in your project:
+in the terminal:
+
+git init
+
+git add .
+
+git commit -m "YOUR FIRST MESSAGE HERE"
+
+git branch -M main
+
+git remote add origin _GIT_LINK_TO_PROJECT_HERE_
+
+git push -u origin main
